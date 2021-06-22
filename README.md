@@ -26,7 +26,7 @@ This Install & Run guide was tested in different machines via DOCKER
   If you wish to ingest the raw csv files you can add a new parameter:
   - ```sudo docker run -e ORIGIN_AIRPORT=SFO -e DESTINATION_AIRPORT=LAX -e PREPARE=1 tblx-challenge```
   
-# 3. OUTPUT
+# 3. Ouput
   The answers will be displayed only in STDOUT and will not be written to disk.
   
 
