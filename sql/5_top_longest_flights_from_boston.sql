@@ -3,6 +3,6 @@ SELECT DISTINCT
     origin_city_name,
     dest_city_name
 FROM {SOURCE}
-WHERE UPPER(origin_city_name) LIKE 'BOSTON, MA'
+WHERE origin = 'BOS'
 ORDER BY 1 DESC
 LIMIT 10

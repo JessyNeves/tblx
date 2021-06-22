@@ -3,7 +3,7 @@ SELECT
     OP_UNIQUE_CARRIER,
     WEEKOFYEAR(FL_DATE) AS week_of_year
 FROM {SOURCE}
-WHERE UPPER(ORIGIN_CITY_NAME) = 'NEW YORK, NY'
+WHERE ORIGIN_CITY_NAME = 'New York, NY'
     AND OP_UNIQUE_CARRIER IN (
                         SELECT OP_UNIQUE_CARRIER
                         FROM (
@@ -11,7 +11,7 @@ WHERE UPPER(ORIGIN_CITY_NAME) = 'NEW YORK, NY'
                                 COUNT(1),
                                 OP_UNIQUE_CARRIER
                             FROM {SOURCE}
-                        WHERE UPPER(ORIGIN_CITY_NAME) = 'NEW YORK, NY'
+                        WHERE ORIGIN_CITY_NAME = 'New York, NY'
                         GROUP BY 2
                         ORDER BY 1 DESC
                         LIMIT 3
