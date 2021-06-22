@@ -15,9 +15,6 @@ if __name__ == '__main__':
 
     prepare = int(sys.argv[3])
     if prepare:
-        # Unzip raw
-        zipped = os.listdir("./data/raw_layer")[0]
-        path = os.path.abspath(zipped)
         # Drop extra column created due to trailing comma.
         raw_data = spark.read.option("header", "true").csv("./data/raw_layer").drop("_c12")
         raw_data.repartition(2)
