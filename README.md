@@ -25,6 +25,8 @@ This Install & Run guide was tested in different machines via DOCKER
   Raw data was obtained from transtats as csv files, as data preparation these were converted to partitioned parquet files which we ingest to calculate the report data.
   If you wish to ingest the raw csv files you can add a new parameter:
   - ```sudo docker run -e ORIGIN_AIRPORT=SFO -e DESTINATION_AIRPORT=LAX -e PREPARE=1 tblx-challenge```
+
+  Before executing please make sure you unrar the file raw.rar in ./data/raw_data/
   
 # 3. Ouput
   The answers will be displayed only in STDOUT and will not be written to disk.
