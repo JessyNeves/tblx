@@ -1,5 +1,5 @@
-SELECT 
-    AVG(arr_delay),
+SELECT
+    AVG(arr_delay) as average_delay,
     origin,
     dest,
     op_unique_carrier
