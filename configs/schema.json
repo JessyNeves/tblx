@@ -1,0 +1,79 @@
+{
+    "flight_data": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "YEAR",
+          "type": "integer",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+            "name": "MONTH",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "FL_DATE",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "OP_UNIQUE_CARRIER",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "ORIGIN",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "ORIGIN_CITY_NAME",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "DEST",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "DEST_CITY_NAME",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "DEP_DELAY",
+            "type": "decimal(10,2)",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "ARR_DELAY",
+            "type": "decimal(10,2)",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "AIR_TIME",
+            "type": "decimal(10,2)",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "DISTANCE",
+            "type": "decimal(10,2)",
+            "nullable": true,
+            "metadata": {}
+        }
+      ]
+    }
+}
