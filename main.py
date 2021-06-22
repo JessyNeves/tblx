@@ -29,6 +29,9 @@ if __name__ == '__main__':
 
     # Ingest prepared layer
     prepared_data = spark.read.parquet("./data/prepared_layer")
+
+    # Check and enforce schema
+    prepared_data = check_and_enforce_schema(prepared_data, "flight_data")
     # Local single node cluster.
     prepared_data.persist(StorageLevel.MEMORY_AND_DISK)
 
