@@ -18,6 +18,7 @@ This Install & Run guide was tested in different machines via DOCKER
   - ```sudo docker run -e ORIGIN_AIRPORT=SFO -e DESTINATION_AIRPORT=LAX tblx-challenge```
   
   !!! Please notice the two parameters ORIGIN_AIRPORT and DESTINATION_AIRPORT passed to docker run !!!
+  
   These parameters are meant to be used to answer Question 9 (Most punctual route given ORIGIN / DESTINATION)
   
   ### 2.1 Optional
