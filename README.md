@@ -11,7 +11,7 @@ This Install & Run guide was tested in different machines via DOCKER
   ### 1.2 Build
   Once the repository is cloned browse to the directory and run:
 
-  - ```sudo docker build -t tblx-challenge```
+  - ```sudo docker build -t tblx-challenge .```
 
  # 2. Run
   
