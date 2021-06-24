@@ -52,17 +52,23 @@ This Install & Run guide was tested in different machines via DOCKER
 # 5. Question break-down ( this is not meant to replace the output obtained by running the solution.)
 
   Query 1: Which are the top 3 airlines that operate the maximum out of New York?
+    
     1. DL;
+    
     2. 9E,
+   
     3. B6.
     
   Query 2: How many flights do they operate a week?
+    
     See output. The result will show how many flights each airline has operated for each week of the year.
   
   Query 3: Which airport on destination has the worst average delay?
+    
     PPG airport.
  
  Query 4: From what airport, flights end up arriving with the worse (average) delay?
+    
     PPG airport.
  
  Query 5: If the source of flying was Boston what are the top 10 longest flights you could take?
@@ -82,12 +88,15 @@ This Install & Run guide was tested in different machines via DOCKER
 
  
  Query 6: What is the shortest flight that operates from Chicago?
+   
     Milwaukee, WI. with a distance of 67 miles.
   
  Query 7: Suppose that you want to traverse from SFO to NY, which is the best flight in terms of average delay?
+    
     DL's flight with an average delay of -9.42
  
  Query 8: If the flight were to be on weekdays or weekends, do these delays change?
+    
     Yes, the values change. On weekend the best is to fly with VX, on weekdays with DL.
 
     |min(AVERAGE_DELAY)|WEEK_DAY|OP_UNIQUE_CARRIER|
@@ -103,6 +112,7 @@ This Install & Run guide was tested in different machines via DOCKER
 
  
  Query 9: How could you find the most punctual route for a parametrized pair (origin, destination) airport?
+    
     For the route (origin, destination) -> (SFO, LAX) the most punctual route is with UA carrier and the average delay is 0.85
   
 
