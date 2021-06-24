@@ -55,5 +55,5 @@ if __name__ == '__main__':
                 df.show(50)
 
             except Exception as e:
-                print(e)
+                print(f"Query {sql_file} failed with error: {e}")
 

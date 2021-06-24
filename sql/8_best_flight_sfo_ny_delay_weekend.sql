@@ -9,7 +9,7 @@ WITH DELAY_BASED_ON_WEEKDAY(
         ORIGIN,
         DEST,
         OP_UNIQUE_CARRIER
-    FROM ffx
+    FROM {SOURCE}
     WHERE ORIGIN = 'SFO'
         AND DEST_CITY_NAME = 'New York, NY'
     GROUP BY 2,3,4,5

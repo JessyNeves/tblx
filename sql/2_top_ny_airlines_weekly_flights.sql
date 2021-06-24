@@ -1,7 +1,8 @@
 SELECT
     COUNT(1) AS flights_per_week,
     OP_UNIQUE_CARRIER,
-    WEEKOFYEAR(FL_DATE) AS week_of_year
+    WEEKOFYEAR(FL_DATE) AS week_of_year,
+    YEAR(FL_DATE) as year
 FROM {SOURCE}
 WHERE ORIGIN_CITY_NAME = 'New York, NY'
     AND OP_UNIQUE_CARRIER IN (
@@ -17,6 +18,5 @@ WHERE ORIGIN_CITY_NAME = 'New York, NY'
                         LIMIT 3
                             )
                         )
-GROUP BY 2,3
-ORDER BY 2,3 ASC,
-    1 DESC
+GROUP BY 2,3,4
+ORDER BY 2,3,4 ASC, 1 DESC
