@@ -52,13 +52,9 @@ This Install & Run guide was tested in different machines via DOCKER
 # 5. Question break-down ( this is not meant to replace the output obtained by running the solution.)
 
   Query 1: Which are the top 3 airlines that operate the maximum out of New York?
-    +-----------+-----------------+
-    |num_flights|op_unique_carrier|
-    +-----------+-----------------+
-    |      12750|               DL|
-    |      12309|               9E|
-    |      11760|               B6|
-    +-----------+-----------------+
+    1. DL;
+    2. 9E,
+    3. B6.
     
   Query 2: How many flights do they operate a week?
     See output. The result will show how many flights each airline has operated for each week of the year.
@@ -70,9 +66,9 @@ This Install & Run guide was tested in different machines via DOCKER
     PPG airport.
  
  Query 5: If the source of flying was Boston what are the top 10 longest flights you could take?
-    --------+----------------+------------------+
+  
     |distance|origin_city_name|    dest_city_name|
-    +--------+----------------+------------------+
+    |--------|----------------|------------------|
     | 2704.00|      Boston, MA| San Francisco, CA|
     | 2689.00|      Boston, MA|      San Jose, CA|
     | 2611.00|      Boston, MA|   Los Angeles, CA|
@@ -83,7 +79,7 @@ This Install & Run guide was tested in different machines via DOCKER
     | 2381.00|      Boston, MA|     Las Vegas, NV|
     | 2300.00|      Boston, MA|       Phoenix, AZ|
     | 2105.00|      Boston, MA|Salt Lake City, UT|
-    +--------+----------------+------------------+
+
  
  Query 6: What is the shortest flight that operates from Chicago?
     Milwaukee, WI. with a distance of 67 miles.
@@ -93,9 +89,9 @@ This Install & Run guide was tested in different machines via DOCKER
  
  Query 8: If the flight were to be on weekdays or weekends, do these delays change?
     Yes, the values change. On weekend the best is to fly with VX, on weekdays with DL.
-    +------------------+--------+-----------------+
+
     |min(AVERAGE_DELAY)|WEEK_DAY|OP_UNIQUE_CARRIER|
-    +------------------+--------+-----------------+
+    |------------------|--------|-----------------|
     |        -11.826923| WEEKEND|               VX|
     |        -10.275362| WEEKEND|               DL|
     |         -9.154567|    WEEK|               DL|
@@ -104,7 +100,7 @@ This Install & Run guide was tested in different machines via DOCKER
     |          1.917526| WEEKEND|               AA|
     |          2.262431|    WEEK|               B6|
     |          7.147541| WEEKEND|               B6|
-    +------------------+--------+-----------------+
+
  
  Query 9: How could you find the most punctual route for a parametrized pair (origin, destination) airport?
     For the route (origin, destination) -> (SFO, LAX) the most punctual route is with UA carrier and the average delay is 0.85
